@@ -20,4 +20,4 @@
   -  SOLID
 ### Goal 🎯
   
-  - Developer Android Native (kotlin)
+  - Developer Android Native (kotlin) (mobile)

@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Animated black hole with an accretion disk">
+  <defs>
+    <linearGradient id="gFar" x1="0" y1="0.15" x2="1" y2="0.85">
+      <stop offset="0" stop-color="#4a1c0c" stop-opacity="0"/>
+      <stop offset="0.10" stop-color="#a3521f" stop-opacity="0.6"/>
+      <stop offset="0.26" stop-color="#ff7a45" stop-opacity="0.9"/>
+      <stop offset="0.44" stop-color="#ffd7a8" stop-opacity="1"/>
+      <stop offset="0.60" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.78" stop-color="#ff9a4d" stop-opacity="0.8"/>
+      <stop offset="0.94" stop-color="#7a3418" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3a1508" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gNear" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5a2410" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#ff7a45" stop-opacity="0.75"/>
+      <stop offset="0.44" stop-color="#fffaf2" stop-opacity="1"/>
+      <stop offset="0.70" stop-color="#e2914c" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#4a1c0c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gRing" x1="0.05" y1="0" x2="0.95" y2="1">
+      <stop offset="0" stop-color="#ff7a45" stop-opacity="0.15"/>
+      <stop offset="0.22" stop-color="#ffd7a8" stop-opacity="0.8"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.78" stop-color="#ff9a4d" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#5a2410" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="gSpoke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb26b" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff4e6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffb26b" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="gHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd7a8" stop-opacity="0.5"/>
+      <stop offset="0.45" stop-color="#d97742" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#05060a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#000000" stop-opacity="1"/>
+      <stop offset="0.7" stop-color="#000000" stop-opacity="0.97"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="b14" x="-30%" y="-70%" width="160%" height="240%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="b6" x="-30%" y="-70%" width="160%" height="240%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="b3" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" fill="#05060a"/>
+
+  <g fill="#fff4e6">
+    <circle cx="80" cy="60" r="0.9" opacity="0.20"/>
+    <circle cx="260" cy="370" r="0.8" opacity="0.16"/>
+    <circle cx="470" cy="40" r="1" opacity="0.18"/>
+    <circle cx="1150" cy="60" r="0.9" opacity="0.22"/>
+    <circle cx="1090" cy="370" r="0.8" opacity="0.15"/>
+    <circle cx="640" cy="400" r="0.7" opacity="0.12"/>
+  </g>
+
+  <ellipse cx="820" cy="210" rx="520" ry="300" fill="url(#gHalo)">
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+  </ellipse>
+
+  <g transform="translate(820 210)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.006;1" dur="6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+      <g>
+        <animate attributeName="opacity" values="0.38;0.62;0.38" dur="6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+        <path d="M -320 -70 A 320 320 0 0 1 320 -70" fill="none" stroke="url(#gRing)" stroke-width="30" filter="url(#b14)"/>
+        <path d="M -320 -70 A 320 320 0 0 1 320 -70" fill="none" stroke="url(#gRing)" stroke-width="8" filter="url(#b6)"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="rotate(-22 600 260)">
+    <ellipse cx="600" cy="214" rx="700" ry="86" fill="url(#gFar)" opacity="0.6" filter="url(#b14)">
+      <animate attributeName="opacity" values="0.52;0.68;0.52" dur="12s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    </ellipse>
+  </g>
+
+  <g opacity="0.5" filter="url(#b6)">
+    <animateTransform attributeName="transform" type="rotate" from="0 820 210" to="360 820 210" dur="18s" repeatCount="indefinite"/>
+    <ellipse cx="1140" cy="210" rx="120" ry="3" fill="url(#gSpoke)" transform="rotate(90 1140 210)"/>
+    <ellipse cx="1046" cy="396" rx="120" ry="3" fill="url(#gSpoke)" transform="rotate(135 1046 396)"/>
+    <ellipse cx="820" cy="540" rx="120" ry="3" fill="url(#gSpoke)" transform="rotate(180 820 540)"/>
+    <ellipse cx="594" cy="396" rx="120" ry="3" fill="url(#gSpoke)" transform="rotate(225 594 396)"/>
+    <ellipse cx="500" cy="210" rx="120" ry="3" fill="url(#gSpoke)" transform="rotate(270 500 210)"/>
+    <ellipse cx="594" cy="24" rx="120" ry="3" fill="url(#gSpoke)" transform="rotate(315 594 24)"/>
+  </g>
+
+  <g transform="translate(820 210)">
+    <circle r="208" fill="none" stroke="url(#gRing)" stroke-width="10" filter="url(#b3)">
+      <animate attributeName="stroke-opacity" values="0.72;1;0.72" dur="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+      <animate attributeName="stroke-width" values="9;11.5;9" dur="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    </circle>
+    <circle r="208" fill="none" stroke="#fffdf8" stroke-width="1.8" opacity="0.6">
+      <animate attributeName="opacity" values="0.45;0.7;0.45" dur="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    </circle>
+  </g>
+
+  <g transform="rotate(-22 600 260)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="-14 6;14 -6;-14 6" dur="12s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <ellipse cx="640" cy="300" rx="660" ry="48" fill="url(#gNear)" opacity="0.95" filter="url(#b6)">
+        <animate attributeName="opacity" values="0.85;1;0.85" dur="4.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+      </ellipse>
+      <ellipse cx="740" cy="308" rx="420" ry="19" fill="url(#gNear)" opacity="0.9" filter="url(#b6)"/>
+    </g>
+  </g>
+
+  <g transform="rotate(-22 600 260)">
+    <g>
+      <animateMotion dur="9s" repeatCount="indefinite" path="M -120 46 L 340 -132"/>
+      <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.22;0.72;1" dur="9s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="170" ry="10" fill="#ffffff" filter="url(#b6)"/>
+    </g>
+  </g>
+
+  <g>
+    <animateMotion dur="4s" repeatCount="indefinite" path="M -300 125 L 300 -125"/>
+    <animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.25;0.7;1" dur="4s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="120" ry="3" fill="#c96a34" transform="rotate(-22 0 0)" filter="url(#b6)"/>
+  </g>
+
+  <g>
+    <animateMotion dur="3s" repeatCount="indefinite" path="M -320 134 L 320 -134"/>
+    <animate attributeName="opacity" values="0;0.45;0.45;0" keyTimes="0;0.25;0.7;1" dur="3s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="100" ry="2.5" fill="#ffb26b" transform="rotate(-22 0 0)" filter="url(#b6)"/>
+  </g>
+
+  <g>
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M -340 142 L 340 -142"/>
+    <animate attributeName="opacity" values="0;0.4;0.4;0" keyTimes="0;0.25;0.7;1" dur="2.4s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="80" ry="2" fill="#e2914c" transform="rotate(-22 0 0)" filter="url(#b6)"/>
+  </g>
+
+  <g transform="translate(392 250)">
+    <circle r="30" fill="url(#gShadow)"/>
+    <circle r="17" fill="#000000" opacity="0.98"/>
+  </g>
+</svg>
